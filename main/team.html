@@ -1,0 +1,79 @@
+\<!DOCTYPE html>
+<html>
+    <head>
+            <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-139529523-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+<!--        favicon-->
+        <link rel='icon' href='favicon.png' type='image'/ >
+        <title class="myTeamTitle" id="myTeamTitle">My FRC Team</title>
+                <!-- Imports -->
+        <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+        <script src="js/jStyles.js"></script>
+        <script src="js/team.js"></script>
+        <script src="js/sorttable.js"></script>
+
+
+
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div class="header" width=device-width>
+          <!-- Logo -->
+        <div class="center-header, logo"><a href="index.html" class="logo"><img class="logoPic" src="logo.png"></a></div>
+        </div>
+
+        <div class = "rightSize">
+        <h2 class="nameHeading" id="nameHeading" style="margin-top: 0; margin-bottom: 0;"></h2>
+        </div>
+
+            <div class="participatedDiv"><h1 class="yearsParticipated" id="yearsParticipated"></h1></div>
+            <div class="location" id="location"></div>
+            <div class="teamCountry" id="teamCountry"></div>
+            <hr>
+
+
+        <div id="buttonDiv" class='buttonDiv'>
+            <button onclick="redirToWebsite()" class="websiteButton">Visit Team Website</button>
+        </div>
+        <a id='facebook-profile' class='facebook'><img src="facebook-logo-2019.png" class='facebook-img' onclick="facebookRedirect()"></a>
+        <a id='instagram-profile' class='instagram'><img src='instagram-logo-2019.png' class='instagram-img' onclick="instagramRedirect()"></a>
+        <a id='youtube-profile' class='youtube'><img src='youtube-logo-2019.png' class='youtube-img' onclick="youtubekRedirect()"></a>
+        <a id='github-profile' class='github'><img src='github-logo-2019.png' class='github-img' onclick="githubRedirect()"></a>
+        <a id='twitter-profile' class='twitter'><img src='twitter-logo-2019.png' class='twitter-img' onclick="twitterRedirect()"></a>
+        <center> <h1> Note: Information on the database is incredibly incomplete </h1> </center>
+        <div class="" id="myItemTable" class= "table-container">
+            <center>
+                <table  class="sortable" id="table">
+                <thead>
+                  <tr class="theader">
+
+                    <th class="sorttable_alpha"> Event Name </th>
+                    <th class="sorttable_numeric"> AVG  </th>
+
+
+
+                  </tr>
+                </thead>
+                <tbody id = "table-items">
+
+
+                </tbody>
+
+
+          </table>
+          </center>
+        </div>
+
+    </body>
+</html>
